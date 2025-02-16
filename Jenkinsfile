@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-               git branch: 'main', url: 'https://github.com/vinodses/01_products_api.git'
+               git branch: 'main', url: 'https://github.com/suffixscope/01_products_api.git'
             }
         }
         stage('Maven Build'){
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Docker Image'){
             steps{
-             sh 'docker build -t vinodses/products_api .'
+             sh 'docker build -t suffixscope/products_api .'
             }
         }
         stage('Docker Image push'){
