@@ -24,8 +24,8 @@ pipeline {
         stage('Docker Image push'){
             steps
             withCredentials([string(credentialsId: 'docker_pwd', variable: 'docker_pwd')]) {
-                   sh 'docker login -u vinodses -p ${docker_pwd}'
-                   sh 'docker push vinodses/products_api'
+                   sh 'docker login -u suffixscope -p ${docker_pwd}'
+                   sh 'docker push suffixscope/products_api'
             }
             }
         }
