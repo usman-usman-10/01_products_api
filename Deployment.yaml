@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: productscontainer
-      image: vinodses/products
+      image: ephrash1/products_api
       ports:
       - containerPort: 8080
 ---
