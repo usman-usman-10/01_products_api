@@ -1,15 +1,15 @@
 -- -----------------------------------------------------
 -- Schema fullstack
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `vinodses_ecomm`;
+DROP SCHEMA IF EXISTS `ephrash_ecomm`;
 
-CREATE SCHEMA `vinodses_ecomm`;
-USE `vinodses_ecomm` ;
+CREATE SCHEMA `ephrash_ecomm`;
+USE `ephrash_ecomm` ;
 
 -- -----------------------------------------------------
 -- Table `fullstack`.`product_category`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `vinodses_ecomm`.`product_category` (
+CREATE TABLE IF NOT EXISTS `ephrash_ecomm`.`product_category` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `category_name` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
@@ -19,7 +19,7 @@ AUTO_INCREMENT = 1;
 -- -----------------------------------------------------
 -- Table `fullstack`.`product`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `vinodses_ecomm`.`product` (
+CREATE TABLE IF NOT EXISTS `ephrash_ecomm`.`product` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(255) DEFAULT NULL,
   `name` VARCHAR(255) DEFAULT NULL,
@@ -97,7 +97,6 @@ VALUES ('POCO C65', 'POCO C65', 'POCO C65 (Pastel Green 4GB RAM 128GB Storage)',
 INSERT INTO product (title, name, description, image_url, active, units_in_stock,
 unit_price, category_id, date_created)
 VALUES ('Mens Cotton Shirt', 'Mens Cotton Shirt', 'Amazon Brand - Symbol Mens Cotton Shirt','assets/images/products/clothes/shirt-1000.png',1,100,5,3, NOW());
-
 ---------------------------------------------------------------------------------------------------------------
 
 
